@@ -1,0 +1,1000 @@
+{
+  "format": "Float32 row-major heights; positions, indices and normals reconstructed in browser",
+  "origin": {
+    "longitude": 7.73,
+    "latitude": 46
+  },
+  "coordinateSystem": {
+    "x": "east meters",
+    "y": "swisstopo source elevation meters (unmodified)",
+    "z": "south meters",
+    "projection": "local equirectangular; x=(lng-origin.lng)*R*pi/180*cos(origin.lat), z=(origin.lat-lat)*R*pi/180",
+    "earthRadius": 6378137,
+    "metersPerLongitudeDegree": 77329.01607478077,
+    "metersPerLatitudeDegree": 111319.49079327357
+  },
+  "files": {
+    "heights": "heights-hd.bin"
+  },
+  "vertexCount": 1000580,
+  "indexCount": 5991480,
+  "triangleCount": 1997160,
+  "minHeight": 1399.4628481955197,
+  "maxHeight": 4608.53261537798,
+  "bbox": {
+    "min": [
+      -9856.4287109375,
+      1399.4628481955197,
+      -10979.7548828125
+    ],
+    "max": [
+      10533.0576171875,
+      4608.53261537798,
+      8588.125
+    ]
+  },
+  "geographicBounds": {
+    "west": 7.6025390625,
+    "south": 45.9228515625,
+    "east": 7.8662109375,
+    "north": 46.0986328125
+  },
+  "requestedBounds": {
+    "west": 7.62,
+    "south": 45.93,
+    "east": 7.84,
+    "north": 46.07
+  },
+  "source": {
+    "attribution": "Terrain \u00a9 swisstopo",
+    "metadata": "https://3d.geo.admin.ch/ch.swisstopo.terrain.3d/v1/layer.json",
+    "documentation": "https://docs.geo.admin.ch/visualize-data/terrain-service.html",
+    "tileTemplate": "https://3d.geo.admin.ch/ch.swisstopo.terrain.3d/v1/20250101/{z}/{x}/{y}.terrain?v=1.43646.0",
+    "tileGeneration": "20250101",
+    "format": "quantized-mesh-1.0",
+    "scheme": "global-geodetic TMS (EPSG:4326)",
+    "zoom": 13
+  },
+  "processing": "Original swisstopo TIN barycentrically sampled onto a regular <=20m grid. All heights derive from source triangles. Shared vertices eliminate tile seam topology. Upward unit normals computed by centered height derivatives. No invented heights or height exaggeration. Runtime normals use shared triangle vertex averages.",
+  "flippedTrianglesForYUp": 0,
+  "tiles": [
+    {
+      "z": 13,
+      "x": 8538,
+      "y": 6186,
+      "vertexCount": 822,
+      "triangleCount": 1559,
+      "minHeight": 1951.9715576171875,
+      "maxHeight": 3182.459716796875
+    },
+    {
+      "z": 13,
+      "x": 8538,
+      "y": 6187,
+      "vertexCount": 7092,
+      "triangleCount": 14042,
+      "minHeight": 2325.13623046875,
+      "maxHeight": 3955.9873046875
+    },
+    {
+      "z": 13,
+      "x": 8538,
+      "y": 6188,
+      "vertexCount": 11916,
+      "triangleCount": 23697,
+      "minHeight": 2539.896728515625,
+      "maxHeight": 4173.24365234375
+    },
+    {
+      "z": 13,
+      "x": 8538,
+      "y": 6189,
+      "vertexCount": 10836,
+      "triangleCount": 21503,
+      "minHeight": 2450.715576171875,
+      "maxHeight": 3542.767333984375
+    },
+    {
+      "z": 13,
+      "x": 8538,
+      "y": 6190,
+      "vertexCount": 16479,
+      "triangleCount": 32794,
+      "minHeight": 2771.8447265625,
+      "maxHeight": 4277.16015625
+    },
+    {
+      "z": 13,
+      "x": 8538,
+      "y": 6191,
+      "vertexCount": 9849,
+      "triangleCount": 19518,
+      "minHeight": 3089.66455078125,
+      "maxHeight": 4357.23486328125
+    },
+    {
+      "z": 13,
+      "x": 8538,
+      "y": 6192,
+      "vertexCount": 8108,
+      "triangleCount": 16094,
+      "minHeight": 2481.3515625,
+      "maxHeight": 3821.529052734375
+    },
+    {
+      "z": 13,
+      "x": 8538,
+      "y": 6193,
+      "vertexCount": 4949,
+      "triangleCount": 9780,
+      "minHeight": 2331.40576171875,
+      "maxHeight": 3396.12109375
+    },
+    {
+      "z": 13,
+      "x": 8539,
+      "y": 6186,
+      "vertexCount": 560,
+      "triangleCount": 1059,
+      "minHeight": 1978.481689453125,
+      "maxHeight": 2568.521728515625
+    },
+    {
+      "z": 13,
+      "x": 8539,
+      "y": 6187,
+      "vertexCount": 5384,
+      "triangleCount": 10655,
+      "minHeight": 2121.685791015625,
+      "maxHeight": 3305.097412109375
+    },
+    {
+      "z": 13,
+      "x": 8539,
+      "y": 6188,
+      "vertexCount": 14631,
+      "triangleCount": 29086,
+      "minHeight": 2522.39111328125,
+      "maxHeight": 3728.507568359375
+    },
+    {
+      "z": 13,
+      "x": 8539,
+      "y": 6189,
+      "vertexCount": 7116,
+      "triangleCount": 14089,
+      "minHeight": 2274.578369140625,
+      "maxHeight": 3307.604736328125
+    },
+    {
+      "z": 13,
+      "x": 8539,
+      "y": 6190,
+      "vertexCount": 7958,
+      "triangleCount": 15777,
+      "minHeight": 2646.416015625,
+      "maxHeight": 3790.71826171875
+    },
+    {
+      "z": 13,
+      "x": 8539,
+      "y": 6191,
+      "vertexCount": 8611,
+      "triangleCount": 17062,
+      "minHeight": 2616.48486328125,
+      "maxHeight": 3628.03662109375
+    },
+    {
+      "z": 13,
+      "x": 8539,
+      "y": 6192,
+      "vertexCount": 5461,
+      "triangleCount": 10758,
+      "minHeight": 2174.601806640625,
+      "maxHeight": 3387.122802734375
+    },
+    {
+      "z": 13,
+      "x": 8539,
+      "y": 6193,
+      "vertexCount": 6646,
+      "triangleCount": 13163,
+      "minHeight": 1886.7923583984375,
+      "maxHeight": 2863.5087890625
+    },
+    {
+      "z": 13,
+      "x": 8540,
+      "y": 6186,
+      "vertexCount": 721,
+      "triangleCount": 1379,
+      "minHeight": 2123.34130859375,
+      "maxHeight": 2658.97509765625
+    },
+    {
+      "z": 13,
+      "x": 8540,
+      "y": 6187,
+      "vertexCount": 1381,
+      "triangleCount": 2650,
+      "minHeight": 2310.6943359375,
+      "maxHeight": 3195.107177734375
+    },
+    {
+      "z": 13,
+      "x": 8540,
+      "y": 6188,
+      "vertexCount": 30011,
+      "triangleCount": 59817,
+      "minHeight": 2879.720703125,
+      "maxHeight": 4477.34375
+    },
+    {
+      "z": 13,
+      "x": 8540,
+      "y": 6189,
+      "vertexCount": 7320,
+      "triangleCount": 14539,
+      "minHeight": 2225.294677734375,
+      "maxHeight": 3117.065185546875
+    },
+    {
+      "z": 13,
+      "x": 8540,
+      "y": 6190,
+      "vertexCount": 7352,
+      "triangleCount": 14596,
+      "minHeight": 2345.887451171875,
+      "maxHeight": 3688.66845703125
+    },
+    {
+      "z": 13,
+      "x": 8540,
+      "y": 6191,
+      "vertexCount": 8062,
+      "triangleCount": 15971,
+      "minHeight": 2654.5927734375,
+      "maxHeight": 4063.548095703125
+    },
+    {
+      "z": 13,
+      "x": 8540,
+      "y": 6192,
+      "vertexCount": 4296,
+      "triangleCount": 8445,
+      "minHeight": 2580.96533203125,
+      "maxHeight": 3661.272216796875
+    },
+    {
+      "z": 13,
+      "x": 8540,
+      "y": 6193,
+      "vertexCount": 7182,
+      "triangleCount": 14252,
+      "minHeight": 2003.091552734375,
+      "maxHeight": 3668.74169921875
+    },
+    {
+      "z": 13,
+      "x": 8541,
+      "y": 6186,
+      "vertexCount": 492,
+      "triangleCount": 916,
+      "minHeight": 2515.85009765625,
+      "maxHeight": 3059.43701171875
+    },
+    {
+      "z": 13,
+      "x": 8541,
+      "y": 6187,
+      "vertexCount": 9441,
+      "triangleCount": 18780,
+      "minHeight": 2658.97509765625,
+      "maxHeight": 3492.388427734375
+    },
+    {
+      "z": 13,
+      "x": 8541,
+      "y": 6188,
+      "vertexCount": 6402,
+      "triangleCount": 12664,
+      "minHeight": 2677.260498046875,
+      "maxHeight": 3618.443603515625
+    },
+    {
+      "z": 13,
+      "x": 8541,
+      "y": 6189,
+      "vertexCount": 2036,
+      "triangleCount": 3950,
+      "minHeight": 2050.005126953125,
+      "maxHeight": 2895.03515625
+    },
+    {
+      "z": 13,
+      "x": 8541,
+      "y": 6190,
+      "vertexCount": 5934,
+      "triangleCount": 11727,
+      "minHeight": 2313.0400390625,
+      "maxHeight": 3614.919677734375
+    },
+    {
+      "z": 13,
+      "x": 8541,
+      "y": 6191,
+      "vertexCount": 14577,
+      "triangleCount": 28982,
+      "minHeight": 2930.641845703125,
+      "maxHeight": 4043.93212890625
+    },
+    {
+      "z": 13,
+      "x": 8541,
+      "y": 6192,
+      "vertexCount": 5771,
+      "triangleCount": 11373,
+      "minHeight": 2942.693603515625,
+      "maxHeight": 4221.619140625
+    },
+    {
+      "z": 13,
+      "x": 8541,
+      "y": 6193,
+      "vertexCount": 2406,
+      "triangleCount": 4714,
+      "minHeight": 2363.75146484375,
+      "maxHeight": 3468.76123046875
+    },
+    {
+      "z": 13,
+      "x": 8542,
+      "y": 6186,
+      "vertexCount": 1939,
+      "triangleCount": 3808,
+      "minHeight": 2809.81689453125,
+      "maxHeight": 3595.2646484375
+    },
+    {
+      "z": 13,
+      "x": 8542,
+      "y": 6187,
+      "vertexCount": 4021,
+      "triangleCount": 7969,
+      "minHeight": 2889.044921875,
+      "maxHeight": 3468.956298828125
+    },
+    {
+      "z": 13,
+      "x": 8542,
+      "y": 6188,
+      "vertexCount": 1129,
+      "triangleCount": 2190,
+      "minHeight": 2409.938232421875,
+      "maxHeight": 2967.81494140625
+    },
+    {
+      "z": 13,
+      "x": 8542,
+      "y": 6189,
+      "vertexCount": 2515,
+      "triangleCount": 4918,
+      "minHeight": 1895.03857421875,
+      "maxHeight": 2906.13671875
+    },
+    {
+      "z": 13,
+      "x": 8542,
+      "y": 6190,
+      "vertexCount": 9293,
+      "triangleCount": 18453,
+      "minHeight": 2073.205810546875,
+      "maxHeight": 3393.777099609375
+    },
+    {
+      "z": 13,
+      "x": 8542,
+      "y": 6191,
+      "vertexCount": 4855,
+      "triangleCount": 9593,
+      "minHeight": 2529.525634765625,
+      "maxHeight": 3597.94873046875
+    },
+    {
+      "z": 13,
+      "x": 8542,
+      "y": 6192,
+      "vertexCount": 11315,
+      "triangleCount": 22431,
+      "minHeight": 2993.375,
+      "maxHeight": 4133.87353515625
+    },
+    {
+      "z": 13,
+      "x": 8542,
+      "y": 6193,
+      "vertexCount": 14758,
+      "triangleCount": 29336,
+      "minHeight": 2821.76904296875,
+      "maxHeight": 4090.82470703125
+    },
+    {
+      "z": 13,
+      "x": 8543,
+      "y": 6186,
+      "vertexCount": 5319,
+      "triangleCount": 10560,
+      "minHeight": 3169.526123046875,
+      "maxHeight": 3884.61181640625
+    },
+    {
+      "z": 13,
+      "x": 8543,
+      "y": 6187,
+      "vertexCount": 5032,
+      "triangleCount": 9966,
+      "minHeight": 2714.41259765625,
+      "maxHeight": 3380.55126953125
+    },
+    {
+      "z": 13,
+      "x": 8543,
+      "y": 6188,
+      "vertexCount": 4385,
+      "triangleCount": 8659,
+      "minHeight": 2022.5484619140625,
+      "maxHeight": 3017.903076171875
+    },
+    {
+      "z": 13,
+      "x": 8543,
+      "y": 6189,
+      "vertexCount": 6536,
+      "triangleCount": 12930,
+      "minHeight": 1666.50732421875,
+      "maxHeight": 2554.111572265625
+    },
+    {
+      "z": 13,
+      "x": 8543,
+      "y": 6190,
+      "vertexCount": 5898,
+      "triangleCount": 11666,
+      "minHeight": 1723.8857421875,
+      "maxHeight": 2814.334716796875
+    },
+    {
+      "z": 13,
+      "x": 8543,
+      "y": 6191,
+      "vertexCount": 2540,
+      "triangleCount": 4967,
+      "minHeight": 2414.081298828125,
+      "maxHeight": 3392.067626953125
+    },
+    {
+      "z": 13,
+      "x": 8543,
+      "y": 6192,
+      "vertexCount": 4731,
+      "triangleCount": 9349,
+      "minHeight": 2290.8388671875,
+      "maxHeight": 3618.145751953125
+    },
+    {
+      "z": 13,
+      "x": 8543,
+      "y": 6193,
+      "vertexCount": 7661,
+      "triangleCount": 15160,
+      "minHeight": 2311.42041015625,
+      "maxHeight": 4235.44140625
+    },
+    {
+      "z": 13,
+      "x": 8544,
+      "y": 6186,
+      "vertexCount": 5379,
+      "triangleCount": 10575,
+      "minHeight": 3247.4052734375,
+      "maxHeight": 4160.24755859375
+    },
+    {
+      "z": 13,
+      "x": 8544,
+      "y": 6187,
+      "vertexCount": 9420,
+      "triangleCount": 18687,
+      "minHeight": 2459.888916015625,
+      "maxHeight": 3710.1455078125
+    },
+    {
+      "z": 13,
+      "x": 8544,
+      "y": 6188,
+      "vertexCount": 12817,
+      "triangleCount": 25506,
+      "minHeight": 2044.72802734375,
+      "maxHeight": 2861.796142578125
+    },
+    {
+      "z": 13,
+      "x": 8544,
+      "y": 6189,
+      "vertexCount": 5249,
+      "triangleCount": 10370,
+      "minHeight": 1624.11279296875,
+      "maxHeight": 2674.731201171875
+    },
+    {
+      "z": 13,
+      "x": 8544,
+      "y": 6190,
+      "vertexCount": 6895,
+      "triangleCount": 13674,
+      "minHeight": 1580.4351806640625,
+      "maxHeight": 2637.76611328125
+    },
+    {
+      "z": 13,
+      "x": 8544,
+      "y": 6191,
+      "vertexCount": 8558,
+      "triangleCount": 16952,
+      "minHeight": 1619.626953125,
+      "maxHeight": 3345.276123046875
+    },
+    {
+      "z": 13,
+      "x": 8544,
+      "y": 6192,
+      "vertexCount": 2869,
+      "triangleCount": 5625,
+      "minHeight": 2055.60205078125,
+      "maxHeight": 3405.59033203125
+    },
+    {
+      "z": 13,
+      "x": 8544,
+      "y": 6193,
+      "vertexCount": 5994,
+      "triangleCount": 11848,
+      "minHeight": 1884.8077392578125,
+      "maxHeight": 3535.3984375
+    },
+    {
+      "z": 13,
+      "x": 8545,
+      "y": 6186,
+      "vertexCount": 13875,
+      "triangleCount": 27621,
+      "minHeight": 3204.30224609375,
+      "maxHeight": 4153.7978515625
+    },
+    {
+      "z": 13,
+      "x": 8545,
+      "y": 6187,
+      "vertexCount": 5209,
+      "triangleCount": 10288,
+      "minHeight": 2331.679931640625,
+      "maxHeight": 3470.785400390625
+    },
+    {
+      "z": 13,
+      "x": 8545,
+      "y": 6188,
+      "vertexCount": 2774,
+      "triangleCount": 5453,
+      "minHeight": 2242.7255859375,
+      "maxHeight": 3036.6572265625
+    },
+    {
+      "z": 13,
+      "x": 8545,
+      "y": 6189,
+      "vertexCount": 1382,
+      "triangleCount": 2691,
+      "minHeight": 1872.835693359375,
+      "maxHeight": 2908.0205078125
+    },
+    {
+      "z": 13,
+      "x": 8545,
+      "y": 6190,
+      "vertexCount": 957,
+      "triangleCount": 1838,
+      "minHeight": 1572.38330078125,
+      "maxHeight": 2447.932373046875
+    },
+    {
+      "z": 13,
+      "x": 8545,
+      "y": 6191,
+      "vertexCount": 9128,
+      "triangleCount": 18120,
+      "minHeight": 1450.408203125,
+      "maxHeight": 2472.40576171875
+    },
+    {
+      "z": 13,
+      "x": 8545,
+      "y": 6192,
+      "vertexCount": 10100,
+      "triangleCount": 20089,
+      "minHeight": 1425.925537109375,
+      "maxHeight": 2588.3896484375
+    },
+    {
+      "z": 13,
+      "x": 8545,
+      "y": 6193,
+      "vertexCount": 12109,
+      "triangleCount": 24081,
+      "minHeight": 1402.95458984375,
+      "maxHeight": 2718.1787109375
+    },
+    {
+      "z": 13,
+      "x": 8546,
+      "y": 6186,
+      "vertexCount": 7108,
+      "triangleCount": 14089,
+      "minHeight": 3016.77099609375,
+      "maxHeight": 4148.17529296875
+    },
+    {
+      "z": 13,
+      "x": 8546,
+      "y": 6187,
+      "vertexCount": 5576,
+      "triangleCount": 11065,
+      "minHeight": 2366.425537109375,
+      "maxHeight": 3309.6259765625
+    },
+    {
+      "z": 13,
+      "x": 8546,
+      "y": 6188,
+      "vertexCount": 1545,
+      "triangleCount": 2998,
+      "minHeight": 2380.815185546875,
+      "maxHeight": 3223.552734375
+    },
+    {
+      "z": 13,
+      "x": 8546,
+      "y": 6189,
+      "vertexCount": 974,
+      "triangleCount": 1870,
+      "minHeight": 2101.412109375,
+      "maxHeight": 3187.48876953125
+    },
+    {
+      "z": 13,
+      "x": 8546,
+      "y": 6190,
+      "vertexCount": 1710,
+      "triangleCount": 3341,
+      "minHeight": 2141.65087890625,
+      "maxHeight": 3103.521484375
+    },
+    {
+      "z": 13,
+      "x": 8546,
+      "y": 6191,
+      "vertexCount": 1993,
+      "triangleCount": 3895,
+      "minHeight": 1677.6959228515625,
+      "maxHeight": 3146.0400390625
+    },
+    {
+      "z": 13,
+      "x": 8546,
+      "y": 6192,
+      "vertexCount": 2629,
+      "triangleCount": 5183,
+      "minHeight": 1426.2115478515625,
+      "maxHeight": 2686.98193359375
+    },
+    {
+      "z": 13,
+      "x": 8546,
+      "y": 6193,
+      "vertexCount": 4095,
+      "triangleCount": 8104,
+      "minHeight": 1399.168701171875,
+      "maxHeight": 2468.7138671875
+    },
+    {
+      "z": 13,
+      "x": 8547,
+      "y": 6186,
+      "vertexCount": 7739,
+      "triangleCount": 15320,
+      "minHeight": 2952.914794921875,
+      "maxHeight": 4461.60595703125
+    },
+    {
+      "z": 13,
+      "x": 8547,
+      "y": 6187,
+      "vertexCount": 1851,
+      "triangleCount": 3595,
+      "minHeight": 2422.7041015625,
+      "maxHeight": 3161.78564453125
+    },
+    {
+      "z": 13,
+      "x": 8547,
+      "y": 6188,
+      "vertexCount": 2097,
+      "triangleCount": 4096,
+      "minHeight": 2401.234130859375,
+      "maxHeight": 3385.722900390625
+    },
+    {
+      "z": 13,
+      "x": 8547,
+      "y": 6189,
+      "vertexCount": 1610,
+      "triangleCount": 3128,
+      "minHeight": 2317.630859375,
+      "maxHeight": 3275.513427734375
+    },
+    {
+      "z": 13,
+      "x": 8547,
+      "y": 6190,
+      "vertexCount": 5104,
+      "triangleCount": 10103,
+      "minHeight": 2443.373779296875,
+      "maxHeight": 3414.7626953125
+    },
+    {
+      "z": 13,
+      "x": 8547,
+      "y": 6191,
+      "vertexCount": 4841,
+      "triangleCount": 9548,
+      "minHeight": 2202.02197265625,
+      "maxHeight": 3247.93212890625
+    },
+    {
+      "z": 13,
+      "x": 8547,
+      "y": 6192,
+      "vertexCount": 4332,
+      "triangleCount": 8538,
+      "minHeight": 2019.1192626953125,
+      "maxHeight": 3409.89794921875
+    },
+    {
+      "z": 13,
+      "x": 8547,
+      "y": 6193,
+      "vertexCount": 7018,
+      "triangleCount": 13871,
+      "minHeight": 1999.9442138671875,
+      "maxHeight": 3371.847900390625
+    },
+    {
+      "z": 13,
+      "x": 8548,
+      "y": 6186,
+      "vertexCount": 5744,
+      "triangleCount": 11332,
+      "minHeight": 3161.6494140625,
+      "maxHeight": 4527.009765625
+    },
+    {
+      "z": 13,
+      "x": 8548,
+      "y": 6187,
+      "vertexCount": 3150,
+      "triangleCount": 6184,
+      "minHeight": 2856.3310546875,
+      "maxHeight": 3747.44921875
+    },
+    {
+      "z": 13,
+      "x": 8548,
+      "y": 6188,
+      "vertexCount": 2002,
+      "triangleCount": 3918,
+      "minHeight": 2800.144287109375,
+      "maxHeight": 3532.33154296875
+    },
+    {
+      "z": 13,
+      "x": 8548,
+      "y": 6189,
+      "vertexCount": 1536,
+      "triangleCount": 2980,
+      "minHeight": 2533.206787109375,
+      "maxHeight": 3417.508056640625
+    },
+    {
+      "z": 13,
+      "x": 8548,
+      "y": 6190,
+      "vertexCount": 5105,
+      "triangleCount": 10103,
+      "minHeight": 2523.510009765625,
+      "maxHeight": 3315.58349609375
+    },
+    {
+      "z": 13,
+      "x": 8548,
+      "y": 6191,
+      "vertexCount": 5563,
+      "triangleCount": 10983,
+      "minHeight": 2241.998291015625,
+      "maxHeight": 3082.556396484375
+    },
+    {
+      "z": 13,
+      "x": 8548,
+      "y": 6192,
+      "vertexCount": 5374,
+      "triangleCount": 10571,
+      "minHeight": 2463.078369140625,
+      "maxHeight": 3629.78271484375
+    },
+    {
+      "z": 13,
+      "x": 8548,
+      "y": 6193,
+      "vertexCount": 7114,
+      "triangleCount": 14040,
+      "minHeight": 2858.737548828125,
+      "maxHeight": 3889.728759765625
+    },
+    {
+      "z": 13,
+      "x": 8549,
+      "y": 6186,
+      "vertexCount": 5023,
+      "triangleCount": 9928,
+      "minHeight": 3652.91943359375,
+      "maxHeight": 4615.34375
+    },
+    {
+      "z": 13,
+      "x": 8549,
+      "y": 6187,
+      "vertexCount": 9741,
+      "triangleCount": 19388,
+      "minHeight": 3120.842529296875,
+      "maxHeight": 4384.29248046875
+    },
+    {
+      "z": 13,
+      "x": 8549,
+      "y": 6188,
+      "vertexCount": 592,
+      "triangleCount": 1114,
+      "minHeight": 3056.087158203125,
+      "maxHeight": 3476.75927734375
+    },
+    {
+      "z": 13,
+      "x": 8549,
+      "y": 6189,
+      "vertexCount": 1486,
+      "triangleCount": 2913,
+      "minHeight": 2738.468505859375,
+      "maxHeight": 3382.583740234375
+    },
+    {
+      "z": 13,
+      "x": 8549,
+      "y": 6190,
+      "vertexCount": 4272,
+      "triangleCount": 8447,
+      "minHeight": 2715.05859375,
+      "maxHeight": 3568.890869140625
+    },
+    {
+      "z": 13,
+      "x": 8549,
+      "y": 6191,
+      "vertexCount": 4257,
+      "triangleCount": 8414,
+      "minHeight": 2705.826904296875,
+      "maxHeight": 3673.645751953125
+    },
+    {
+      "z": 13,
+      "x": 8549,
+      "y": 6192,
+      "vertexCount": 5965,
+      "triangleCount": 11822,
+      "minHeight": 3068.403076171875,
+      "maxHeight": 4202.63037109375
+    },
+    {
+      "z": 13,
+      "x": 8549,
+      "y": 6193,
+      "vertexCount": 11129,
+      "triangleCount": 22102,
+      "minHeight": 3330.969482421875,
+      "maxHeight": 4545.1357421875
+    }
+  ],
+  "landmarks": [
+    {
+      "name": "Rothorn webcam",
+      "longitude": 7.797409,
+      "latitude": 46.021509,
+      "cameraAltitude": 3105,
+      "meshPosition": {
+        "x": 5212.671644584866,
+        "y": 3092.9160461622123,
+        "z": -2394.370927472719,
+        "method": "regular-grid triangle interpolation from source TIN samples"
+      }
+    },
+    {
+      "name": "Sunnegga webcam",
+      "longitude": 7.770068,
+      "latitude": 46.017246,
+      "cameraAltitude": 2290,
+      "meshPosition": {
+        "x": 3098.419016084298,
+        "y": 2287.274791661868,
+        "z": -1919.8159382208064,
+        "method": "regular-grid triangle interpolation from source TIN samples"
+      }
+    },
+    {
+      "name": "Blauherd webcam",
+      "longitude": 7.786053,
+      "latitude": 46.016699,
+      "cameraAltitude": 2582,
+      "meshPosition": {
+        "x": 4334.523338039645,
+        "y": 2572.2518715814717,
+        "z": -1858.924176757174,
+        "method": "regular-grid triangle interpolation from source TIN samples"
+      }
+    },
+    {
+      "name": "Matterhorn approximate summit",
+      "longitude": 7.6586,
+      "latitude": 45.9763,
+      "meshPosition": {
+        "x": -5521.291747739391,
+        "y": 4451.397687885009,
+        "z": 2638.271931800367,
+        "method": "regular-grid triangle interpolation from source TIN samples"
+      }
+    },
+    {
+      "name": "Zermatt approximate center",
+      "longitude": 7.7491,
+      "latitude": 46.0207,
+      "meshPosition": {
+        "x": 1476.9842070283046,
+        "y": 1600.0681535445303,
+        "z": -2304.313459420534,
+        "method": "regular-grid triangle interpolation from source TIN samples"
+      }
+    }
+  ],
+  "grid": {
+    "nx": 1021,
+    "nz": 980,
+    "spacingX": 19.98969247855392,
+    "spacingZ": 19.987619900727783,
+    "layout": "row-major rows from north to south; columns west to east"
+  },
+  "quality": {
+    "missingSamples": 0,
+    "sourceDegenerateTrianglesSkipped": 0,
+    "overlappingSampleHits": 9354,
+    "maxOverlapHeightDifference": 4.181869481807553
+  },
+  "heightGrid": "Optional compact Float32 height samples (4 bytes per grid point); reconstruct x,z from bbox and grid, indexed row-major north-to-south / west-to-east. Positions/normals/indices files supply equivalent complete buffers."
+}

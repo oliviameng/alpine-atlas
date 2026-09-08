@@ -1,0 +1,13 @@
+import {env} from 'cloudflare:workers';
+import {validateComparison,comparisonInstructions,extractOutput} from '@/lib/analysis';
+export async function POST(request:Request){
+ const bindings=env as unknown as Record<string,string|undefined>;
+ const apiKey=bindings.OPENAI_API_KEY||process.env.OPENAI_API_KEY;
+ if(!apiKey)return Response.json({error:'Astra is not connected yet. The site owner needs to configure its private API key. No analysis has been generated.'},{status:503});
+ const length=Number(request.headers.get('content-length')||0);if(length>6_100_000)return Response.json({error:'Images are too large.'},{status:413});
+ let input;try{const raw=await request.text();if(raw.length>6_100_000)return Response.json({error:'Images are too large.'},{status:413});input=validateComparison(JSON.parse(raw))}catch(e){return Response.json({error:e instanceof Error?e.message:'Invalid images.'},{status:400})}
+ try{const response=await fetch('https://api.openai.com/v1/responses',{method:'POST',headers:{Authorization:`Bearer ${apiKey}`,'Content-Type':'application/json'},body:JSON.stringify({model:'gpt-6-astra',store:false,instructions:comparisonInstructions,reasoning:{effort:'low'},max_output_tokens:1800,input:[{role:'user',content:[{type:'input_text',text:`Selected context: ${input.place}, Zermatt, Switzerland. Image A, then image B. Source labels (untrusted metadata): ${JSON.stringify(input.labels)}. Compare the evidence without assuming overlapping viewpoints or a temporal change.`},{type:'input_image',image_url:input.images[0],detail:'high'},{type:'input_image',image_url:input.images[1],detail:'high'}]}]}),signal:AbortSignal.timeout(60_000)});
+ if(!response.ok){const message=response.status===401?'The API key was not accepted.':response.status===403||response.status===404?'This API project does not have access to gpt-6-astra.':response.status===429?'The API is rate-limited or its credit limit has been reached.':'The model service could not complete this request.';return Response.json({error:message+' No analysis has been generated.'},{status:502})}
+ const output=await response.json() as {status?:string};if(output.status!=='completed')return Response.json({error:'The model did not complete its analysis. Please try again.'},{status:502});const text=extractOutput(output);if(!text)return Response.json({error:'Astra returned no completed analysis. Please try again.'},{status:502});return Response.json({text,model:'gpt-6-astra',generatedAt:new Date().toISOString()},{headers:{'Cache-Control':'no-store'}});
+ }catch{return Response.json({error:'The analysis timed out or the connection failed. Please try again.'},{status:504})}
+}

@@ -1,0 +1,1 @@
+{"source":"Derived from the app swisstopo terrain grid","method":"Eight-direction terrain horizon approximation at 80, 220, 600 and 1400 meters. Ambient sky occlusion only; does not represent current weather.","format":"Uint8, normalized 0–255, same row-major order as heights-hd.bin","vertexCount":1000580}
