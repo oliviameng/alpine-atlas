@@ -4,6 +4,10 @@ Explore Zermatt in 3D, then see the visual evidence behind what changed.
 
 Built for the OpenAI GPT-6 Astra SF Hackathon, September 8, 2026.
 
+**[Open the live demo](https://zermatt-mountain-atlas.oliviameng.chatgpt.site/?scene=reconstruction&view=matterhorn)** · **[Watch the demo video](https://www.loom.com/share/2aeb49305ee84ed38d3304aa39b7d558)**
+
+The hosted demo is publicly accessible. Start with the Matterhorn orbit, then choose **Explore with Astra** to inspect dated image evidence.
+
 ## What it does
 
 - A custom Three.js scene built from measured Swiss terrain, historical aerial imagery, and a modeled winter surface.
